@@ -511,14 +511,7 @@ window.onclick = function(event) {
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
-              <i class="fas fa-award"></i>
-              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Awards</p>
-            </div>
-          </div>
-
+          
         </div>
 
       </div>
@@ -588,7 +581,7 @@ window.onclick = function(event) {
         <div class="icon-box">
           <div class="icon"><i class="fas fa-stethoscope"></i></div>
           <h4><a href="#">General Check-ups</a></h4>
-      <a href="#" class="enquiry-button" data-bs-toggle="modal" data-bs-target="#inquiryModal1">Enquiry Now</a>
+      <a href="#" class="enquiry-button" data-bs-toggle="modal" data-bs-target="#inquiryModal1"><span class="badge rounded-pill bg-primary">Enquiry Now</span></a>
         </div>
       </div>
 
@@ -596,7 +589,7 @@ window.onclick = function(event) {
         <div class="icon-box">
           <div class="icon"><i class="fas fa-pills"></i></div>
           <h4><a href="#">Medication Management</a></h4>
-        <a href="#" class="enquiry-button" data-bs-toggle="modal" data-bs-target="#inquiryModal2">Enquiry Now</a>
+        <a href="#" class="enquiry-button" data-bs-toggle="modal" data-bs-target="#inquiryModal2"><span class="badge rounded-pill bg-secondary">Enquiry Now</span></a>
         </div>
       </div>
 
@@ -604,7 +597,7 @@ window.onclick = function(event) {
         <div class="icon-box">
           <div class="icon"><i class="fas fa-x-ray"></i></div>
           <h4><a href="#">Diagnostic Imaging</a></h4>
-           <a href="#" class="enquiry-button" data-bs-toggle="modal" data-bs-target="#inquiryModal3">Enquiry Now</a>
+           <a href="#" class="enquiry-button" data-bs-toggle="modal" data-bs-target="#inquiryModal3"><span class="badge rounded-pill bg-success">Enquiry Now</span></a>
         </div>
       </div>
 
@@ -612,7 +605,7 @@ window.onclick = function(event) {
         <div class="icon-box">
           <div class="icon"><i class="fas fa-thermometer-half"></i></div>
           <h4><a href="#">Health Screenings</a></h4>
-          <a href="#" class="enquiry-button" data-bs-toggle="modal" data-bs-target="#inquiryModal4">Enquiry Now</a>
+           <a href="#" class="enquiry-button" data-bs-toggle="modal" data-bs-target="#inquiryModal4"><span class="badge rounded-pill bg-danger">Enquiry Now</span></a>
         </div>
       </div>
 
@@ -620,7 +613,7 @@ window.onclick = function(event) {
         <div class="icon-box">
           <div class="icon"><i class="fas fa-heartbeat"></i></div>
           <h4><a href="#">Cardiovascular Care</a></h4>
-          <a href="#" class="enquiry-button" data-bs-toggle="modal" data-bs-target="#inquiryModal5">Enquiry Now</a>
+             <a href="#" class="enquiry-button" data-bs-toggle="modal" data-bs-target="#inquiryModal5"><span class="badge rounded-pill bg-warning text-dark">Enquiry Now</span></a>
         </div>
       </div>
 
@@ -628,7 +621,7 @@ window.onclick = function(event) {
         <div class="icon-box">
           <div class="icon"><i class="fas fa-people-arrows"></i></div>
           <h4><a href="#">Patient Consultations</a></h4>
-           <a href="#" class="enquiry-button" data-bs-toggle="modal" data-bs-target="#inquiryModal6">Enquiry Now</a>
+            <a href="#" class="enquiry-button" data-bs-toggle="modal" data-bs-target="#inquiryModal6"><span class="badge rounded-pill bg-info text-dark">Enquiry Now</span></a>
         </div>
       </div>
 
@@ -636,9 +629,12 @@ window.onclick = function(event) {
 
   </div>
 </section>
-<!-- Bootstrap Modal -->
-<!-- Bootstrap Modal -->
- <div class="modal fade" id="inquiryModal1" tabindex="-1" aria-labelledby="inquiryModalLabel1" aria-hidden="true">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- End Services Section -->
+<div class="modal fade" id="inquiryModal1" tabindex="-1" aria-labelledby="inquiryModalLabel1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -684,14 +680,7 @@ window.onclick = function(event) {
             </div>
         </div>
     </div>
-
-
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
- <div class="modal fade" id="inquiryModal2" tabindex="-1" aria-labelledby="inquiryModalLabel2" aria-hidden="true">
+<div class="modal fade" id="inquiryModal2" tabindex="-1" aria-labelledby="inquiryModalLabel2" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -749,20 +738,16 @@ window.onclick = function(event) {
             </div>
         </div>
     </div>
-    <!-- Diagnostic Imaging Modal -->
-<div class="modal fade" id="inquiryModal3" tabindex="-1" aria-labelledby="inquiryModalLabel3" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        
-      <h7 class="modal-title" id="inquiryModalLabel3"> <h6 ><button type="button" class="btn btn-warning btn-sm">Diagnostic</button><button type="button" class="btn btn-info btn-sm">Imag </button><button type="button" class="btn btn-dark btn-sm">ing </button></h6></h7>
-        
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body" style="background-image: url('https://media.istockphoto.com/id/1074166156/photo/medical-ct-or-mri-or-pet-scan-standing-in-the-modern-hospital-laboratory-technologically.webp?a=1&b=1&s=612x612&w=0&k=20&c=CpVe7-rrk9t4Y0d6IekIvlB_94KCS76PTH5d1NMKWjk='); background-size: cover; background-position: center;">
-         <div class="icon"><i class="fas fa-x-ray"></i> </div>
-        <!-- Diagnostic Imaging Form -->
-        <form id="diagnosticImagingForm">
+  <div class="modal fade" id="inquiryModal3" tabindex="-1" aria-labelledby="inquiryModalLabel3" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h7 class="modal-title" id="inquiryModalLabel3"> <h6 ><button type="button" class="btn btn-warning btn-sm">Diagnostic</button><button type="button" class="btn btn-info btn-sm">Imaging </button></h6></h7>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="background-image: url('https://media.istockphoto.com/id/1074166156/photo/medical-ct-or-mri-or-pet-scan-standing-in-the-modern-hospital-laboratory-technologically.webp?a=1&b=1&s=612x612&w=0&k=20&c=CpVe7-rrk9t4Y0d6IekIvlB_94KCS76PTH5d1NMKWjk='); background-size: cover; background-position: center;">
+                    <div class="icon"> <i class="fas fa-x-ray"></i></div>
+                     <form id="diagnosticImagingForm">
           <div class="row">
             <!-- Patient Name -->
             <div class="col-md-6 mb-3">
@@ -805,7 +790,11 @@ window.onclick = function(event) {
             </div>
 
             <!-- Doctor's Referral -->
-           
+            <div class="col-md-6 mb-3">
+              <label for="referralDoctor" class="form-label">Referring Doctor's Name</label>
+              <input type="text" class="form-control" id="referralDoctor" placeholder="Enter doctor's name" required>
+            </div>
+          </div>
 
           <!-- Additional Notes -->
           <div class="mb-3">
@@ -816,23 +805,20 @@ window.onclick = function(event) {
           <!-- Submit Button -->
           <button type="submit" class="btn btn-primary w-100">Book Diagnostic Imaging</button>
         </form>
-      </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-<div class="modal fade" id="healthScreeningModal" tabindex="-1" aria-labelledby="healthScreeningModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        
-      <h7 class="modal-title" id="healthScreeningModal"> <h6 ><button type="button" class="btn btn-warning btn-sm">Health</button><button type="button" class="btn btn-info btn-sm">Screening </button></h6></h7>
-        
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body" style="background-image: url('https://media.istockphoto.com/id/1343098807/photo/medicine-doctor-holding-blue-helix-dna-structure-on-hologram-modern-virtual-screen-interface.webp?a=1&b=1&s=612x612&w=0&k=20&c=m6clfd4KfXG0GLpgFLUjcNYinqTIv3ZtfjkIAMYOa84='); background-size: cover; background-position: center;">
-         <div class="icon"><i class="fas fa-heartbeat"></i></div>
-        <!-- Diagnostic Imaging Form -->
-       <form id="healthScreeningForm">
+<div class="modal fade" id="inquiryModal4" tabindex="-1" aria-labelledby="inquiryModalLabel4" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h7 class="modal-title" id="inquiryModalLabel4"> <h6 ><button type="button" class="btn btn-warning btn-sm">Health</button><button type="button" class="btn btn-info btn-sm">Screenings</button></h6></h7>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="background-image: url('https://media.istockphoto.com/id/1343098807/photo/medicine-doctor-holding-blue-helix-dna-structure-on-hologram-modern-virtual-screen-interface.webp?a=1&b=1&s=612x612&w=0&k=20&c=m6clfd4KfXG0GLpgFLUjcNYinqTIv3ZtfjkIAMYOa84='); background-size: cover; background-position: center;">
+                    <div class="icon"> <i class="fas fa-heartbeat"></i></div>
+                   <form id="healthScreeningForm">
           <div class="row">
             <!-- Patient Name -->
             <div class="col-md-6 mb-3">
@@ -876,7 +862,12 @@ window.onclick = function(event) {
             </div>
 
             <!-- Doctor's Referral -->
-          
+            <div class="col-md-6 mb-3">
+              <label for="referralDoctor" class="form-label">Referring Doctor's Name</label>
+              <input type="text" class="form-control" id="referralDoctor" placeholder="Enter doctor's name" required>
+            </div>
+          </div>
+
           <!-- Additional Notes -->
           <div class="mb-3">
             <label for="notes" class="form-label">Additional Notes / Symptoms</label>
@@ -886,10 +877,153 @@ window.onclick = function(event) {
           <!-- Submit Button -->
           <button type="submit" class="btn btn-primary w-100">Book Health Screening</button>
         </form>
-      </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
+<div class="modal fade" id="inquiryModal5" tabindex="-1" aria-labelledby="inquiryModalLabel5" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h7 class="modal-title" id="inquiryModalLabel5"> <h6 ><button type="button" class="btn btn-warning btn-sm">Cardiovascular </button><button type="button" class="btn btn-info btn-sm">Care </button></h6></h7>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="background-image: url('https://media.istockphoto.com/id/1290220631/photo/human-heart-with-ecg-graph.webp?a=1&b=1&s=612x612&w=0&k=20&c=L9zX1OQkqiZ3hZiO_9fb4Aa1EjNDcSeHj_mxXroMcdE='); background-size: cover; background-position: center;">
+                    <div class="icon"> <i class="fas fa-heartbeat"></i></div>
+                 <form id="cardiovascularCareForm">
+          <div class="row">
+            <!-- Patient Name -->
+            <div class="col-md-6 mb-3">
+              <label for="patientName" class="form-label">Patient Name</label>
+              <input type="text" class="form-control" id="patientName" placeholder="Enter patient's name" required>
+            </div>
+
+            <!-- Patient Age -->
+            <div class="col-md-6 mb-3">
+              <label for="patientAge" class="form-label">Patient Age</label>
+              <input type="number" class="form-control" id="patientAge" placeholder="Enter patient's age" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- Appointment Type -->
+            <div class="col-md-6 mb-3">
+              <label for="appointmentType" class="form-label">Appointment Type</label>
+              <select class="form-select" id="appointmentType" required>
+                <option selected disabled>Select appointment type</option>
+                <option value="initialConsultation">Initial Consultation</option>
+                <option value="followUpVisit">Follow-up Visit</option>
+                <option value="heartScreening">Heart Screening</option>
+                <option value="stressTest">Stress Test</option>
+                <option value="echocardiogram">Echocardiogram</option>
+              </select>
+            </div>
+
+            <!-- Preferred Date -->
+            <div class="col-md-6 mb-3">
+              <label for="appointmentDate" class="form-label">Preferred Appointment Date</label>
+              <input type="date" class="form-control" id="appointmentDate" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- Preferred Time -->
+            <div class="col-md-6 mb-3">
+              <label for="appointmentTime" class="form-label">Preferred Appointment Time</label>
+              <input type="time" class="form-control" id="appointmentTime" required>
+            </div>
+
+            <!-- Referring Doctor -->
+            <div class="col-md-6 mb-3">
+              <label for="referringDoctor" class="form-label">Referring Doctor's Name</label>
+              <input type="text" class="form-control" id="referringDoctor" placeholder="Enter doctor's name" required>
+            </div>
+          </div>
+
+          <!-- Additional Notes -->
+          <div class="mb-3">
+            <label for="notes" class="form-label">Additional Notes / Symptoms</label>
+            <textarea class="form-control" id="notes" rows="3" placeholder="Include any important details"></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-primary w-100">Schedule Cardiovascular Appointment</button>
+        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="modal fade" id="inquiryModal6" tabindex="-1" aria-labelledby="inquiryModalLabel6" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h7 class="modal-title" id="inquiryModalLabel6"> <h6 ><button type="button" class="btn btn-warning btn-sm">Patient </button><button type="button" class="btn btn-info btn-sm">Consultations </button></h6></h7>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="background-image: url('https://media.istockphoto.com/id/1295918822/photo/uses-laptop-while-talking-with-patient-stock-photo.webp?a=1&b=1&s=612x612&w=0&k=20&c=IwjDnzszKF7TVE8FNVsVqj13fVcX-mI_EWy-0C2kGrI='); background-size: cover; background-position: center;">
+                    <div class="icon">   <i class="fas fa-user-md"></i></div>
+                <form id="patientConsultationForm">
+          <div class="row">
+            <!-- Patient Name -->
+            <div class="col-md-6 mb-3">
+              <label for="patientName" class="form-label">Patient Name</label>
+              <input type="text" class="form-control" id="patientName" placeholder="Enter patient's name" required>
+            </div>
+
+            <!-- Patient Age -->
+            <div class="col-md-6 mb-3">
+              <label for="patientAge" class="form-label">Patient Age</label>
+              <input type="number" class="form-control" id="patientAge" placeholder="Enter patient's age" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- Consultation Type -->
+            <div class="col-md-6 mb-3">
+              <label for="consultationType" class="form-label">Consultation Type</label>
+              <select class="form-select" id="consultationType" required>
+                <option selected disabled>Select consultation type</option>
+                <option value="general">General Consultation</option>
+                <option value="specialist">Specialist Consultation</option>
+                <option value="followUp">Follow-up Consultation</option>
+                <option value="telehealth">Telehealth Consultation</option>
+              </select>
+            </div>
+
+            <!-- Preferred Date -->
+            <div class="col-md-6 mb-3">
+              <label for="consultationDate" class="form-label">Preferred Consultation Date</label>
+              <input type="date" class="form-control" id="consultationDate" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- Preferred Time -->
+            <div class="col-md-6 mb-3">
+              <label for="consultationTime" class="form-label">Preferred Consultation Time</label>
+              <input type="time" class="form-control" id="consultationTime" required>
+            </div>
+
+            <!-- Referring Doctor -->
+            <div class="col-md-6 mb-3">
+              <label for="referringDoctor" class="form-label">Referring Doctor's Name (if applicable)</label>
+              <input type="text" class="form-control" id="referringDoctor" placeholder="Enter doctor's name">
+            </div>
+          </div>
+
+          <!-- Additional Notes -->
+          <div class="mb-3">
+            <label for="notes" class="form-label">Additional Notes / Symptoms</label>
+            <textarea class="form-control" id="notes" rows="3" placeholder="Include any important details or symptoms"></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-primary w-100">Book Consultation</button>
+        </form>
+                </div>
+            </div>
+        </div>
+    </div>
 <!-- End Services Section -->
 
     <!-- ======= Appointment Section ======= -->
@@ -1110,7 +1244,7 @@ window.onclick = function(event) {
         <div class="member d-flex align-items-start">
           <div class="pic"><img src="assets/img/doctors/doctors-2.jpg" class="img-fluid" alt="Sarah Jhonson"></div>
           <div class="member-info">
-            <h4>Sarah Jhonson</h4>
+            <h4>Dr Sarala</h4>
             <span>Anesthesiologist</span>
             
             <div class="social">
@@ -1127,7 +1261,7 @@ window.onclick = function(event) {
         <div class="member d-flex align-items-start">
           <div class="pic"><img src="assets/img/doctors/doctors-3.jpg" class="img-fluid" alt="William Anderson"></div>
           <div class="member-info">
-            <h4>William Anderson</h4>
+            <h4>Dr nitel</h4>
             <span>Cardiology</span>
             
             <div class="social">
@@ -1144,7 +1278,7 @@ window.onclick = function(event) {
         <div class="member d-flex align-items-start">
           <div class="pic"><img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt="Amanda Jepson"></div>
           <div class="member-info">
-            <h4>Amanda Jepson</h4>
+            <h4>Dr Amita</h4>
             <span>Neurosurgeon</span>
             
             <div class="social">
@@ -1616,7 +1750,175 @@ window.onclick = function(event) {
             </div>
         </div>
     </div>
+ <div class="container">
+                  <body onload="google_translate()">
+    <div id="translation"></div>
 
+    <!-- Your other page content goes here -->
+    
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=google_translate"></script>
+    <script>
+        function google_translate() {
+            var opt = {
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                pageLanguage: "en",
+            };
+            new google.translate.TranslateElement(opt, "translation");
+        }
+
+        addEventListener("load", function () {
+            if (document.querySelector(".goog-te-menu-frame")) {
+                document.getElementById("translation").addEventListener("click", function () {
+                    if (this.id === "translation") scrollableLanguagesList();
+                });
+                addEventListener("resize", function () {
+                    if ("none" !== document.querySelector(".goog-te-menu-frame").style.display) scrollableLanguagesList();
+                });
+            }
+        });
+
+        function scrollableLanguagesList() {
+            var iframe = document.querySelector(".goog-te-menu-frame"),
+                doc = iframe.contentWindow.document,
+                div = doc.body.children[0],
+                table = div.children[0],
+                width = div.dataset.width || parseInt(div.style.width),
+                rect,
+                diff;
+
+            if (!div.dataset.width) div.dataset.width = width;
+
+            if (innerWidth < width) {
+                rect = table.getBoundingClientRect();
+                width = rect.right - rect.left;
+                diff = width - innerWidth;
+
+                div.style.width = width - diff - 24 + "px";
+                div.style.padding = "4px 0 1em 4px";
+                div.style.overflowX = "scroll";
+            } else {
+                div.style.width = "auto";
+                div.style.padding = "4px";
+                div.style.overflowX = "visible";
+            }
+
+            rect = div.getBoundingClientRect();
+            iframe.style.width = rect.right - rect.left + "px";
+            iframe.style.height = rect.bottom - rect.top + "px";
+        }
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            translationTooltipsDisable();
+        });
+
+        function translationTooltipsDisable() {
+            _tipon = function () {
+                /*Don't display the tooltip*/
+            };
+            _tipoff = function () {
+                /*Don't hide the tooltip*/
+            };
+        }
+    </script>
+</body>
+<style>
+/* General reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Container for the translation widget */
+#translation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Adjust as needed */
+    margin-bottom: 0;
+}
+
+/* Styling for the Google Translate widget */
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+
+body {
+    top: 0px !important;
+}
+
+/* Custom styling for the translation button */
+.goog-te-gadget-simple {
+    background-color: #007bff !important; /* Button color */
+    border: 2px solid #0056b3 !important; /* Border color */
+    border-radius: 4px;
+    color: white !important;
+    font-size: 16px !important;
+    padding:5px 10px !important;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.goog-te-gadget-simple:hover {
+    background-color: #0056b3 !important; /* Hover color */
+    border-color: #003f7f !important; /* Hover border color */
+}
+
+/* Customize the translation select box */
+.goog-te-gadget-simple .goog-te-menu-value {
+    color: white !important;
+}
+
+/* Hide the Google Translate logo */
+.goog-te-gadget img {
+    display: none !important;
+}
+
+/* Style the translation options when the user clicks on the widget */
+.goog-te-menu-frame {
+    width: 20% !important;
+    height: auto !important;
+    max-width: 30px;
+    border: none !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the scrollable language list */
+.goog-te-menu2 {
+    max-height: 10px !important;
+    overflow-y: auto !important;
+    border: none !important;
+    padding: 1px !important;
+}
+
+/* Individual language options */
+.goog-te-menu2-item {
+    padding: 5px 10px !important;
+    cursor: pointer;
+}
+
+.goog-te-menu2-item-selected {
+    background-color: #ddd !important;
+}
+
+/* Responsive iframe styling */
+iframe.goog-te-menu-frame {
+    max-width: 20% !important;
+    height: auto !important;
+}
+</style>
+    </div>
+          </div>
+        </div>
     
 <style>
     .download-links {
