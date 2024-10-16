@@ -588,7 +588,7 @@ window.onclick = function(event) {
         <div class="icon-box">
           <div class="icon"><i class="fas fa-stethoscope"></i></div>
           <h4><a href="#">General Check-ups</a></h4>
-          <p>Routine physical examinations to monitor and maintain your health.</p>
+      <a href="#" class="enquiry-button" data-bs-toggle="modal" data-bs-target="#inquiryModal1">Enquiry Now</a>
         </div>
       </div>
 
@@ -596,7 +596,7 @@ window.onclick = function(event) {
         <div class="icon-box">
           <div class="icon"><i class="fas fa-pills"></i></div>
           <h4><a href="#">Medication Management</a></h4>
-          <p>Expert guidance on prescription medications and managing chronic conditions.</p>
+        <a href="#" class="enquiry-button" data-bs-toggle="modal" data-bs-target="#inquiryModal2">Enquiry Now</a>
         </div>
       </div>
 
@@ -604,7 +604,7 @@ window.onclick = function(event) {
         <div class="icon-box">
           <div class="icon"><i class="fas fa-x-ray"></i></div>
           <h4><a href="#">Diagnostic Imaging</a></h4>
-          <p>Advanced imaging services including X-rays and ultrasounds for accurate diagnosis.</p>
+           <a href="#" class="enquiry-button" data-bs-toggle="modal" data-bs-target="#inquiryModal3">Enquiry Now</a>
         </div>
       </div>
 
@@ -612,7 +612,7 @@ window.onclick = function(event) {
         <div class="icon-box">
           <div class="icon"><i class="fas fa-thermometer-half"></i></div>
           <h4><a href="#">Health Screenings</a></h4>
-          <p>Screenings for common health conditions and preventive care.</p>
+          <a href="#" class="enquiry-button" data-bs-toggle="modal" data-bs-target="#inquiryModal4">Enquiry Now</a>
         </div>
       </div>
 
@@ -620,7 +620,7 @@ window.onclick = function(event) {
         <div class="icon-box">
           <div class="icon"><i class="fas fa-heartbeat"></i></div>
           <h4><a href="#">Cardiovascular Care</a></h4>
-          <p>Assessment and management of heart-related conditions.</p>
+          <a href="#" class="enquiry-button" data-bs-toggle="modal" data-bs-target="#inquiryModal5">Enquiry Now</a>
         </div>
       </div>
 
@@ -628,7 +628,7 @@ window.onclick = function(event) {
         <div class="icon-box">
           <div class="icon"><i class="fas fa-people-arrows"></i></div>
           <h4><a href="#">Patient Consultations</a></h4>
-          <p>Personalized consultations to address your medical concerns and treatment options.</p>
+           <a href="#" class="enquiry-button" data-bs-toggle="modal" data-bs-target="#inquiryModal6">Enquiry Now</a>
         </div>
       </div>
 
@@ -636,6 +636,260 @@ window.onclick = function(event) {
 
   </div>
 </section>
+<!-- Bootstrap Modal -->
+<!-- Bootstrap Modal -->
+ <div class="modal fade" id="inquiryModal1" tabindex="-1" aria-labelledby="inquiryModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h7 class="modal-title" id="inquiryModalLabel1"> <h6 ><button type="button" class="btn btn-warning btn-sm">General </button><button type="button" class="btn btn-info btn-sm">Check </button><button type="button" class="btn btn-dark btn-sm">Up </button></h6></h7>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="background-image: url('https://media.istockphoto.com/id/153431506/photo/please-let-me-take-care-of-everything.webp?a=1&b=1&s=612x612&w=0&k=20&c=a9Cu0w6mcRtwuRIhyaYt8uBLIA3QD3ZQD-NJLIOS1t4='); background-size: cover; background-position: center;">
+                  <div class="icon"><i class="fas fa-stethoscope"></i></div>
+                   <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="checkupType" class="form-label">Check-up Type</label>
+                        <select class="form-select" id="checkupType" required>
+                            <option selected disabled>Select Check-up Type</option>
+                            <option value="general">General Health Check-up</option>
+                            <option value="dental">Dental Check-up</option>
+                            <option value="eye">Eye Examination</option>
+                            <option value="heart">Heart Check-up</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="appointmentTime" class="form-label">Preferred Time</label>
+                        <input type="time" class="form-control" id="appointmentTime" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="appointmentDate" class="form-label">Preferred Date</label>
+                        <input type="date" class="form-control" id="appointmentDate" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Book Appointment</button>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+ <div class="modal fade" id="inquiryModal2" tabindex="-1" aria-labelledby="inquiryModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h7 class="modal-title" id="inquiryModalLabel2"> <h6 ><button type="button" class="btn btn-warning btn-sm">Medication </button><button type="button" class="btn btn-info btn-sm">Manage </button><button type="button" class="btn btn-dark btn-sm">Ment </button></h6></h7>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="background-image: url('https://media.istockphoto.com/id/1395657542/photo/in-a-futuristic-laboratory-a-scientist-with-a-pipette-analyzes-a-colored-liquid-to-extract.webp?a=1&b=1&s=612x612&w=0&k=20&c=09FrgtbV67SsWjWaRnYr3iM1_UN7if9C436mf044Ps8='); background-size: cover; background-position: center;">
+                    <div class="icon"><i class="fas fa-pills"></i></div>
+                  <form id="medicationForm">
+                    <!-- Medication Name -->
+                    <div class="mb-3">
+                        <label for="medicationName" class="form-label">Medication Name</label>
+                        <input type="text" class="form-control" id="medicationName" placeholder="Enter medication name" required>
+                    </div>
+                    <!-- Dosage -->
+                    <div class="mb-3">
+                        <label for="dosage" class="form-label">Dosage (mg)</label>
+                        <input type="number" class="form-control" id="dosage" placeholder="Enter dosage in mg" required>
+                    </div>
+                    <!-- Frequency -->
+                    <div class="mb-3">
+                        <label for="frequency" class="form-label">Frequency</label>
+                        <select class="form-select" id="frequency" required>
+                            <option selected disabled>Select frequency</option>
+                            <option value="onceDaily">Once Daily</option>
+                            <option value="twiceDaily">Twice Daily</option>
+                            <option value="thriceDaily">Thrice Daily</option>
+                            <option value="weekly">Weekly</option>
+                        </select>
+                    </div>
+                    <!-- Time to Take -->
+                    <div class="mb-3">
+                        <label for="medicationTime" class="form-label">Time to Take</label>
+                        <input type="time" class="form-control" id="medicationTime" required>
+                    </div>
+                    <!-- Start Date -->
+                    <div class="mb-3">
+                        <label for="startDate" class="form-label">Start Date</label>
+                        <input type="date" class="form-control" id="startDate" required>
+                    </div>
+                    <!-- End Date (Optional) -->
+                    <div class="mb-3">
+                        <label for="endDate" class="form-label">End Date (Optional)</label>
+                        <input type="date" class="form-control" id="endDate">
+                    </div>
+                    <!-- Additional Notes -->
+                    <div class="mb-3">
+                        <label for="notes" class="form-label">Additional Notes</label>
+                        <textarea class="form-control" id="notes" rows="3" placeholder="Any special instructions or notes"></textarea>
+                    </div>
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary w-100">Save Medication</button>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Diagnostic Imaging Modal -->
+<div class="modal fade" id="inquiryModal3" tabindex="-1" aria-labelledby="inquiryModalLabel3" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+      <h7 class="modal-title" id="inquiryModalLabel3"> <h6 ><button type="button" class="btn btn-warning btn-sm">Diagnostic</button><button type="button" class="btn btn-info btn-sm">Imag </button><button type="button" class="btn btn-dark btn-sm">ing </button></h6></h7>
+        
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="background-image: url('https://media.istockphoto.com/id/1074166156/photo/medical-ct-or-mri-or-pet-scan-standing-in-the-modern-hospital-laboratory-technologically.webp?a=1&b=1&s=612x612&w=0&k=20&c=CpVe7-rrk9t4Y0d6IekIvlB_94KCS76PTH5d1NMKWjk='); background-size: cover; background-position: center;">
+         <div class="icon"><i class="fas fa-x-ray"></i> </div>
+        <!-- Diagnostic Imaging Form -->
+        <form id="diagnosticImagingForm">
+          <div class="row">
+            <!-- Patient Name -->
+            <div class="col-md-6 mb-3">
+              <label for="patientName" class="form-label">Patient Name</label>
+              <input type="text" class="form-control" id="patientName" placeholder="Enter patient's name" required>
+            </div>
+
+            <!-- Patient Age -->
+            <div class="col-md-6 mb-3">
+              <label for="patientAge" class="form-label">Patient Age</label>
+              <input type="number" class="form-control" id="patientAge" placeholder="Enter patient's age" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- Imaging Type -->
+            <div class="col-md-6 mb-3">
+              <label for="imagingType" class="form-label">Imaging Type</label>
+              <select class="form-select" id="imagingType" required>
+                <option selected disabled>Select imaging type</option>
+                <option value="mri">MRI</option>
+                <option value="ctScan">CT Scan</option>
+                <option value="xRay">X-Ray</option>
+                <option value="ultrasound">Ultrasound</option>
+              </select>
+            </div>
+
+            <!-- Imaging Date -->
+            <div class="col-md-6 mb-3">
+              <label for="imagingDate" class="form-label">Preferred Imaging Date</label>
+              <input type="date" class="form-control" id="imagingDate" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- Preferred Time -->
+            <div class="col-md-6 mb-3">
+              <label for="imagingTime" class="form-label">Preferred Imaging Time</label>
+              <input type="time" class="form-control" id="imagingTime" required>
+            </div>
+
+            <!-- Doctor's Referral -->
+           
+
+          <!-- Additional Notes -->
+          <div class="mb-3">
+            <label for="notes" class="form-label">Additional Notes / Symptoms</label>
+            <textarea class="form-control" id="notes" rows="3" placeholder="Include any important details"></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-primary w-100">Book Diagnostic Imaging</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="healthScreeningModal" tabindex="-1" aria-labelledby="healthScreeningModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+      <h7 class="modal-title" id="healthScreeningModal"> <h6 ><button type="button" class="btn btn-warning btn-sm">Health</button><button type="button" class="btn btn-info btn-sm">Screening </button></h6></h7>
+        
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="background-image: url('https://media.istockphoto.com/id/1343098807/photo/medicine-doctor-holding-blue-helix-dna-structure-on-hologram-modern-virtual-screen-interface.webp?a=1&b=1&s=612x612&w=0&k=20&c=m6clfd4KfXG0GLpgFLUjcNYinqTIv3ZtfjkIAMYOa84='); background-size: cover; background-position: center;">
+         <div class="icon"><i class="fas fa-heartbeat"></i></div>
+        <!-- Diagnostic Imaging Form -->
+       <form id="healthScreeningForm">
+          <div class="row">
+            <!-- Patient Name -->
+            <div class="col-md-6 mb-3">
+              <label for="patientName" class="form-label">Patient Name</label>
+              <input type="text" class="form-control" id="patientName" placeholder="Enter patient's name" required>
+            </div>
+
+            <!-- Patient Age -->
+            <div class="col-md-6 mb-3">
+              <label for="patientAge" class="form-label">Patient Age</label>
+              <input type="number" class="form-control" id="patientAge" placeholder="Enter patient's age" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- Screening Type -->
+            <div class="col-md-6 mb-3">
+              <label for="screeningType" class="form-label">Screening Type</label>
+              <select class="form-select" id="screeningType" required>
+                <option selected disabled>Select screening type</option>
+                <option value="bloodTest">Blood Test</option>
+                <option value="cancerScreening">Cancer Screening</option>
+                <option value="heartCheck">Heart Health Check</option>
+                <option value="diabetesScreening">Diabetes Screening</option>
+                <option value="cholesterolCheck">Cholesterol Check</option>
+              </select>
+            </div>
+
+            <!-- Screening Date -->
+            <div class="col-md-6 mb-3">
+              <label for="screeningDate" class="form-label">Preferred Screening Date</label>
+              <input type="date" class="form-control" id="screeningDate" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- Preferred Time -->
+            <div class="col-md-6 mb-3">
+              <label for="screeningTime" class="form-label">Preferred Screening Time</label>
+              <input type="time" class="form-control" id="screeningTime" required>
+            </div>
+
+            <!-- Doctor's Referral -->
+          
+          <!-- Additional Notes -->
+          <div class="mb-3">
+            <label for="notes" class="form-label">Additional Notes / Symptoms</label>
+            <textarea class="form-control" id="notes" rows="3" placeholder="Include any important details"></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-primary w-100">Book Health Screening</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- End Services Section -->
 
     <!-- ======= Appointment Section ======= -->
