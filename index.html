@@ -63,7 +63,7 @@
 
     <h1 class="logo me-auto"><a href="index.html">Our Clinic</a></h1>
 
-    <nav id="navbar" class="navbar order-last order-lg-0">
+    <nav id="sidebar" class="sidebar">
       <ul>
         <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
         <li><a class="nav-link scrollto" href="#about">About</a></li>
@@ -75,36 +75,73 @@
         <li><a class="nav-link scrollto" href="#review">Review</a></li>
         <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
       </ul>
-      <i class="bi bi-list mobile-nav-toggle"></i>
-    </nav><!-- .navbar -->
+      <i class="bi bi-x close-sidebar"></i>
+    </nav><!-- .sidebar -->
+
+    <i class="bi bi-list open-sidebar"></i>
 
     <a href="#appointment" class="appointment-btn scrollto">Appointment</a>
 
   </div>
 </header>
+
 <style>
-/* Default: Hide navbar in mobile */
-#navbar ul {
-  display: none;
+/* Sidebar Hidden by Default */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Off-screen */
+  width: 250px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+  z-index: 9999;
+  padding: 20px;
 }
 
-#navbar.navbar-mobile ul {
-  display: block;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  background: white;
+.sidebar ul {
+  list-style: none;
+  padding: 0;
 }
 
-.mobile-nav-toggle {
-  display: inline-block;
+.sidebar ul li {
+  margin: 20px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+}
+
+.sidebar.show {
+  left: 0; /* Slide in */
+}
+
+/* Close Button */
+.close-sidebar {
+  font-size: 24px;
   cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+/* Sidebar Toggle Button */
+.open-sidebar {
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 99999;
 }
 
 @media (max-width: 991px) {
-  .navbar {
-    position: relative;
+  .open-sidebar {
+    display: block;
+  }
+
+  .sidebar {
+    display: block;
   }
 }
 
@@ -114,13 +151,16 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
-  const navbar = document.querySelector('#navbar');
+  const openSidebar = document.querySelector('.open-sidebar');
+  const closeSidebar = document.querySelector('.close-sidebar');
+  const sidebar = document.querySelector('.sidebar');
 
-  mobileNavToggle.addEventListener('click', function () {
-    navbar.classList.toggle('navbar-mobile'); // Toggle mobile class
-    this.classList.toggle('bi-list'); // Toggle between three-bar icon and close icon
-    this.classList.toggle('bi-x'); // Change to 'X' when open
+  openSidebar.addEventListener('click', function () {
+    sidebar.classList.add('show');
+  });
+
+  closeSidebar.addEventListener('click', function () {
+    sidebar.classList.remove('show');
   });
 });
 
