@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Medilab Bootstrap Template - Index</title>
+  <title>Our Clinic-Doctor Near Me</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -44,8 +44,8 @@
   <div id="topbar" class="d-flex align-items-center fixed-top">
     <div class="container d-flex justify-content-between">
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope"></i> <a href="mailto:contact@example.com">contact@example.com</a>
-        <i class="bi bi-phone"></i> +1 5589 55488 55
+        <i class="bi bi-envelope"></i> <a href="mailto:contact@ourclinic.com">contact@ourclinic.com</a>
+        <i class="bi bi-phone"></i> +91 67895 23456
       </div>
       <div class="d-none d-lg-flex social-links align-items-center">
         <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
@@ -60,7 +60,7 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index.html">Medilab</a></h1>
+      <h1 class="logo me-auto"><a href="index.html">Our Clinic</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -79,7 +79,7 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Make an</span> Appointment</a>
+      <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline"></span> Appointment</a>
 
     </div>
   </header><!-- End Header -->
@@ -91,133 +91,11 @@
       <h1>Welcome to Our Clinic</h1>
       <h2 align="center" >We are Team of Talented Doctors</h2>
       <!-- Trigger Button -->
-     <a href="javascript:void(0);" id="openModalBtn"><button type="button" class="btn btn-success">Get Consultation</button></a>
+     
 </div>
 
 <!-- The Modal -->
-<div id="consultationModal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <div class="form">
-      <h4>REQUEST FOR YOUR</h4>
-      <h1>Consultation</h1>
-      <input type="text" name="fname" id="fname" placeholder="Name" maxlength="60" required />
-      <input type="email" name="email" id="email" placeholder="Email" maxlength="100" required />
-      <input type="date" name="date" id="date" required />
-      <select name="service" required>
-        <option value="emergencyservice">Emergency Service</option>
-        <option value="certifiedservice">Certified Service</option>
-      </select>
-      <button type="submit" class="btn2">BOOK APPOINTMENT</button>
-    </div>
-  </div>
-</div>
-<style>
-/* Style for the trigger button */
-.btn-get-started {
-  padding: 10px 20px;
-  background-color: #5cb85c;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
 
-/* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-/* Modal Content */
-.modal-content {
-  background-color: #f9f9f9;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  max-width: 500px;
-  border-radius: 10px;
-}
-
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* Form styles */
-.form h4, .form h1 {
-  text-align: center;
-  color: #333;
-}
-
-.form input,
-.form select {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.btn2 {
-  width: 100%;
-  padding: 10px;
-  background-color: #5cb85c;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.btn2:hover {
-  background-color: #4cae4c;
-}
-</style>
-<script>
-// Get the modal
-var modal = document.getElementById("consultationModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("openModalBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
     </div>
   </section>
   <main id="main">
@@ -432,40 +310,61 @@ window.onclick = function(event) {
     </section><!-- End About Section -->
 
     <!-- ======= Counts Section ======= -->
-    <section id="counts" class="counts">
-      <div class="container">
+  <style>
+  .video-container {
+    display: flex;
+    justify-content: space-between; /* Space between videos */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    align-items: center; /* Align vertically */
+  }
 
-        <div class="row">
+  .video-item {
+    flex: 1 1 23%; /* Adjust width to fit 4 videos in a row */
+    margin: 0 1%; /* Space between videos */
+  }
 
-          <div class="col-lg-3 col-md-6">
-            <div class="count-box">
-              <i class="fas fa-user-md"></i>
-              <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Doctors</p>
-            </div>
-          </div>
+  .video-item iframe {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 250px; /* Adjust max height to fit your design */
+    border: none;
+  }
+</style>
 
-          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-            <div class="count-box">
-              <i class="far fa-hospital"></i>
-              <span data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Departments</p>
-            </div>
-          </div>
+<section id="video" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner" align="center">
+    <!-- First Video -->
+    <div class="carousel-item active">
+     <iframe width="697" height="392" src="https://www.youtube.com/embed/qAAMQT3k49I" title="Start Your School In 75000 | Disruptive Business Model | Dr Vivek Bindra" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
 
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
-              <i class="fas fa-flask"></i>
-              <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Research Labs</p>
-            </div>
-          </div>
+    <!-- Second Video -->
+    <div class="carousel-item">
+    <iframe width="697" height="392" src="https://www.youtube.com/embed/6DUxIwvyd9A" title="School Kholne ka Easy Plan - How to Open a School? स्कूल खोलने का आसान तरीका!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
 
-          
-        </div>
+    <!-- Third Video -->
+    <div class="carousel-item">
+      <iframe width="697" height="392" src="https://www.youtube.com/embed/tCSel_N9Sd0" title="How to start a private school | Private school kaise khole | गांव में स्कूल कैसे खोलें ?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
 
-      </div>
-    </section><!-- End Counts Section -->
+    <!-- Fourth Video -->
+    <div class="carousel-item">
+     <iframe width="697" height="392" src="https://www.youtube.com/embed/ONOZBilNVTg" title="How To Open Schools In India- School Business Plan, School Business Profits,New Business Ideas 2020" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+ <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</section>
+
+
+<!-- End Counts Section -->
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl.carousel/1.3.3/owl.carousel.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl.carousel/1.3.3/owl.theme.default.min.css">
  <section id="services" class="services">
@@ -503,7 +402,7 @@ window.onclick = function(event) {
         <img src="https://media.tenor.com/5uVh2k0VTlwAAAAM/operating-room-in-the19th-century-going-to-the-doctor-could-kill-you.gif" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
         <div class="icon"><i class="fas fa-hospital-user"></i></div>
-          <p>Genwral Operation</p>
+          <p>General Operation</p>
         </div>
       </div>
     </div>
@@ -982,7 +881,7 @@ window.onclick = function(event) {
 
     <div class="section-title">
       <h2>Book an Appointment</h2>
-      <p>Please fill out the form below to book an appointment at our clinic. We will get back to you with the available slots and confirmation.</p>
+      <p>Please fill out the form below to book an appointment at our clinic.</p>
     </div>
 
     <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
@@ -1304,6 +1203,64 @@ window.onclick = function(event) {
 }
 </style>
 <!-- End Doctors Section -->
+<div style="max-width: 600px; margin: 20px auto; border: 2px solid #2c3e50; border-radius: 8px; overflow: hidden;">
+  <!-- Medical Services -->
+  <div style="border-bottom: 1px solid #2c3e50;">
+    <button data-ui-tablist-tab style="width: 100%; padding: 15px; background-color: #eaf2f8; border: none; text-align: left; font-size: 18px; font-weight: bold; color: #2c3e50; cursor: pointer;">🩺 General Medical Services</button>
+    <div data-ui-tablist-tabpanel style="padding: 15px; display: block;">
+      <div style="font-size: 16px; color: #34495e;">
+        We provide comprehensive general medical services including routine checkups, health assessments, and preventive care to ensure your well-being.
+      </div>
+    </div>
+  </div>
+
+  <!-- Patient Care -->
+  <div style="border-bottom: 1px solid #2c3e50;">
+    <button data-ui-tablist-tab style="width: 100%; padding: 15px; background-color: #eaf2f8; border: none; text-align: left; font-size: 18px; font-weight: bold; color: #2c3e50; cursor: pointer;">👨‍⚕️ Patient Care & Consultations</button>
+    <div data-ui-tablist-tabpanel style="padding: 15px; display: none;">
+      <div style="font-size: 16px; color: #34495e;">
+        Our experienced doctors offer personalized consultations to diagnose and treat your health concerns with care and compassion.
+      </div>
+    </div>
+  </div>
+
+  <!-- Appointment Scheduling -->
+  <div style="border-bottom: 1px solid #2c3e50;">
+    <button data-ui-tablist-tab style="width: 100%; padding: 15px; background-color: #eaf2f8; border: none; text-align: left; font-size: 18px; font-weight: bold; color: #2c3e50; cursor: pointer;">📅 Appointment Scheduling</button>
+    <div data-ui-tablist-tabpanel style="padding: 15px; display: none;">
+      <div style="font-size: 16px; color: #34495e;">
+        Book your appointments easily online or by phone, ensuring a convenient and hassle-free experience for all patients.
+      </div>
+    </div>
+  </div>
+
+  <!-- Health Tips -->
+  <div>
+    <button data-ui-tablist-tab style="width: 100%; padding: 15px; background-color: #eaf2f8; border: none; text-align: left; font-size: 18px; font-weight: bold; color: #2c3e50; cursor: pointer;">💡 Health Tips & Advice</button>
+    <div data-ui-tablist-tabpanel style="padding: 15px; display: none;">
+      <div style="font-size: 16px; color: #34495e;">
+        Stay informed with our health tips and medical advice on how to maintain a healthy lifestyle and prevent common illnesses.
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const accordionButtons = document.querySelectorAll('[data-ui-tablist-tab]');
+  
+  accordionButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const panel = button.nextElementSibling;
+      const isOpen = panel.style.display === 'block';
+
+      document.querySelectorAll('[data-ui-tablist-tabpanel]').forEach(p => p.style.display = 'none');
+      
+      if (!isOpen) {
+        panel.style.display = 'block';
+      }
+    });
+  });
+</script>
 
     <!-- ======= Frequently Asked Questions Section ======= -->
    <section id="faq" class="faq section-bg">
@@ -1640,77 +1597,633 @@ window.onclick = function(event) {
   <footer id="footer">
 
     <div class="footer-top">
-      <div class="container">
-        <div class="row">
+        <div class="container">
+            <div class="row">
 
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Medilab</h3>
-            <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
-            </p>
-          </div>
+                <div class="col-lg-3 col-md-6 footer-contact">
+                    <h3>Our Clinic</h3>
+                    <p>
+                        A108 Adam Street <br>
+                        New York, NY 535022<br>
+                        United States <br><br>
+                        <strong>Phone:</strong> +91 55895 55488 <br>
+                        <strong>Email:</strong> info@ourclinic.com<br>
+                    </p>
+                </div>
 
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
 
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
 
+                <div class="col-lg-2 col-md-6 footer-links">
+                    <h4>Documentation</h4>
+                    <ul>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Disclaimer</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Cookie Policy</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                    </ul>
+                </div>
+
+             
+
+               
+
+                <!-- Open Hours Section -->
+                <div class="col-lg-6 col-md-12 footer-open-hours">
+                    <h4>Working Hours</h4>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td><i class="far fa-clock"></i> Monday to Thursday</td>
+                                <td>9:00am - 5:00pm</td>
+                            </tr>
+                            <tr>
+                                <td><i class="far fa-clock"></i> Friday</td>
+                                <td>9:00am - 4:00pm</td>
+                            </tr>
+                            <tr>
+                                <td><i class="far fa-clock"></i> Saturday</td>
+                                <td>9:00am - 1:30pm</td>
+                            </tr>
+                            <tr>
+                                <td><i class="far fa-clock"></i> Sunday</td>
+                                <td>9:30am - 12:00pm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- End Open Hours Section -->
+
+            </div>
         </div>
+    </div>
+ <div class="container">
+                  <body onload="google_translate()">
+    <div id="translation"></div>
+
+    <!-- Your other page content goes here -->
+    
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=google_translate"></script>
+    <script>
+        function google_translate() {
+            var opt = {
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                pageLanguage: "en",
+            };
+            new google.translate.TranslateElement(opt, "translation");
+        }
+
+        addEventListener("load", function () {
+            if (document.querySelector(".goog-te-menu-frame")) {
+                document.getElementById("translation").addEventListener("click", function () {
+                    if (this.id === "translation") scrollableLanguagesList();
+                });
+                addEventListener("resize", function () {
+                    if ("none" !== document.querySelector(".goog-te-menu-frame").style.display) scrollableLanguagesList();
+                });
+            }
+        });
+
+        function scrollableLanguagesList() {
+            var iframe = document.querySelector(".goog-te-menu-frame"),
+                doc = iframe.contentWindow.document,
+                div = doc.body.children[0],
+                table = div.children[0],
+                width = div.dataset.width || parseInt(div.style.width),
+                rect,
+                diff;
+
+            if (!div.dataset.width) div.dataset.width = width;
+
+            if (innerWidth < width) {
+                rect = table.getBoundingClientRect();
+                width = rect.right - rect.left;
+                diff = width - innerWidth;
+
+                div.style.width = width - diff - 24 + "px";
+                div.style.padding = "4px 0 1em 4px";
+                div.style.overflowX = "scroll";
+            } else {
+                div.style.width = "auto";
+                div.style.padding = "4px";
+                div.style.overflowX = "visible";
+            }
+
+            rect = div.getBoundingClientRect();
+            iframe.style.width = rect.right - rect.left + "px";
+            iframe.style.height = rect.bottom - rect.top + "px";
+        }
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            translationTooltipsDisable();
+        });
+
+        function translationTooltipsDisable() {
+            _tipon = function () {
+                /*Don't display the tooltip*/
+            };
+            _tipoff = function () {
+                /*Don't hide the tooltip*/
+            };
+        }
+    </script>
+</body>
+<style>
+/* General reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Container for the translation widget */
+#translation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Adjust as needed */
+    margin-bottom: 0;
+}
+
+/* Styling for the Google Translate widget */
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+
+body {
+    top: 0px !important;
+}
+
+/* Custom styling for the translation button */
+.goog-te-gadget-simple {
+    background-color: #007bff !important; /* Button color */
+    border: 2px solid #0056b3 !important; /* Border color */
+    border-radius: 4px;
+    color: white !important;
+    font-size: 16px !important;
+    padding:5px 10px !important;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.goog-te-gadget-simple:hover {
+    background-color: #0056b3 !important; /* Hover color */
+    border-color: #003f7f !important; /* Hover border color */
+}
+
+/* Customize the translation select box */
+.goog-te-gadget-simple .goog-te-menu-value {
+    color: white !important;
+}
+
+/* Hide the Google Translate logo */
+.goog-te-gadget img {
+    display: none !important;
+}
+
+/* Style the translation options when the user clicks on the widget */
+.goog-te-menu-frame {
+    width: 20% !important;
+    height: auto !important;
+    max-width: 30px;
+    border: none !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the scrollable language list */
+.goog-te-menu2 {
+    max-height: 10px !important;
+    overflow-y: auto !important;
+    border: none !important;
+    padding: 1px !important;
+}
+
+/* Individual language options */
+.goog-te-menu2-item {
+    padding: 5px 10px !important;
+    cursor: pointer;
+}
+
+.goog-te-menu2-item-selected {
+    background-color: #ddd !important;
+}
+
+/* Responsive iframe styling */
+iframe.goog-te-menu-frame {
+    max-width: 20% !important;
+    height: auto !important;
+}
+</style>
+    </div>
+          </div>
+        </div>
+    
+<style>
+    .download-links {
+        display: flex; /* Aligns items in a row */
+        justify-content: center; /* Centers items horizontally */
+        gap: 20px; /* Spacing between links */
+    }
+    .download-links a {
+        color: #007bff; /* Link color */
+        font-size: 18px; /* Font size */
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        transition: color 0.3s ease; /* Smooth color transition */
+    }
+    .download-links a i {
+        margin-right: 8px; /* Spacing between icon and text */
+    }
+    .download-links a:hover {
+        color: #0056b3; /* Color on hover */
+    }
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<div align="center"class="footer-buttons">
+            <a href="#hero"><button type="button" class="btn btn-primary btn-sm">Home</button></a>
+             <a href="#about"><button type="button" class="btn btn-secondary btn-sm">About</button></a>
+               <a href="#services"><button type="button" class="btn btn-warning btn-sm">Services</button></a>
+             <a href="#departments"><button type="button" class="btn btn-danger btn-sm">Departments</button></a>
+          <a href="#doctors"><button type="button" class="btn btn-info btn-sm">Doctors</button></a>
+               <a href="#faq"><button type="button" class="btn btn-success btn-sm">FAQ</button></a>
+             <a href="#gallery"><button type="button" class="btn btn-dark btn-sm">Gallery</button></a>
+     <a href="#review"><button type="button" class="btn btn-success btn-sm">Review</button></a>
+             <a href="#contact"><button type="button" class="btn btn-dark btn-sm">Contact</button></a>
+        <a href="#appointment"><button type="button" class="btn btn-dark btn-sm">Appointement</button></a>
+        </div>
+<div class="download-links text-center text-md-right pt-3 pt-md-0">
+    <a href="path/to/patient-forms.pdf" class="download-link" aria-label="Patient Forms" target="_blank">
+        <i class="fas fa-download"></i> Patient Forms
+    </a>
+    <a href="path/to/insurance-form.pdf" class="download-link" aria-label="Insurance Form" target="_blank">
+        <i class="fas fa-download"></i> Insurance Form
+    </a>
+    <a href="path/to/general-instructions.pdf" class="download-link" aria-label="General Instructions" target="_blank">
+        <i class="fas fa-download"></i> General Instructions
+    </a>
+</div>
+
+
+
+    </div>
+</footer>
+<style>
+    .wa__btn_popup {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .wa__btn_popup .wa__btn_popup_icon {
+      width: 50px;
+      height: 50px;
+      background-color: #25D366;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    }
+
+    .wa__popup_chat_box {
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      width: 300px;
+      display: none;
+      z-index: 1000;
+      border-radius: 0.25rem;
+      box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    }
+
+    .wa__popup_chat_box .wa__popup_heading {
+      background-color: #28a745;
+      color: #f8f9fa;
+      padding: 1rem 1.5rem;
+      border-top-left-radius: 0.25rem;
+      border-top-right-radius: 0.25rem;
+    }
+
+    .wa__popup_chat_box .wa__popup_content {
+      
+      margin: 1.5rem;
+    }
+
+    .wa__popup_chat_box .wa__popup_content_item {
+      margin-bottom: 0.5rem;
+    }
+
+    .wa__popup_chat_box .wa__popup_avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .wa__popup_chat_box .wa__popup_txt {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 10px;
+    }
+
+    .wa__popup_chat_box .wa__popup_txt .wa__member_name {
+      font-weight: bold;
+    }
+
+    .wa__popup_chat_box .wa__popup_txt .wa__member_duty {
+      color: #6c757d;
+    }
+
+    .wa__popup_chat_box a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+
+  <div class="wa__btn_popup">
+    <div class="wa__btn_popup_icon">
+      <i class="fa fa-2x fa-comments"></i>
+    </div>
+  </div>
+
+  <div class="wa__popup_chat_box wa__pending wa__lauch">
+    <div class="wa__popup_heading">
+      <div class="fw-bold wa__popup_title">Start a Conversation</div>
+      <div class="small wa__popup_intro">
+        Hi! Click one of our members below to chat on <strong>WhatsApp ;)</strong>
       </div>
     </div>
 
-    <div class="container d-md-flex py-4">
+   <div class="wa__popup_content wa__popup_content_left">
+       <!--<div class="small text-secondary wa__popup_notice">
+        Tim kami biasanya membalas dalam hitungan menit
+      </div>-->
 
-      <div class="me-md-auto text-center text-md-start">
-        <div class="copyright">
-          &copy; Copyright <strong><span>Medilab</span></strong>. All Rights Reserved
+      <div class="wa__popup_content_list">
+        <!-- Member 1 -->
+        <div class="wa__popup_content_item">
+          <a target="_blank" href="https://api.whatsapp.com/send?phone=7838090428" class="rounded wa__stt wa__stt_online">
+            <div class="wa__popup_avatar" style="background-image: url('#');">
+            </div>
+            <div class="wa__popup_txt">
+              <div class="wa__member_name">Sohan kumar</div>
+              <div class="wa__member_duty">Doctor</div>
+            </div>
+          </a>
         </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/ -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+
+        <!-- Member 2 -->
+        <div class="wa__popup_content_item">
+          <a target="_blank" href="https://web.whatsapp.com/send?phone=8797529661" class="rounded wa__stt wa__stt_online">
+            <div class="wa__popup_avatar" style="background-image: url('#');">
+            </div>
+            <div class="wa__popup_txt">
+              <div class="wa__member_name">Rohan kumar</div>
+              <div class="wa__member_duty">Co Doctor</div>
+            </div>
+          </a>
         </div>
       </div>
-      <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      </div>
+      <!-- /.wa__popup_content_list -->
     </div>
-  </footer><!-- End Footer -->
+    <!-- /.wa__popup_content -->
+  </div>
+
+  <script>
+    document.querySelector('.wa__btn_popup').addEventListener('click', function() {
+      const chatBox = document.querySelector('.wa__popup_chat_box');
+      if (chatBox.style.display === 'none' || chatBox.style.display === '') {
+        chatBox.style.display = 'block';
+      } else {
+        chatBox.style.display = 'none';
+      }
+    });
+  </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+ 
+        <div class="contact-info" style="text-align: right; margin-right: 30px;">
+  <div>
+    <b>Contact:</b> +91 12345 67890 <span style="margin-left: 20px;"><b>Email:</b> <a href="mailto:contact@hometution.com">contact@ourclinic.com</a></span>
+</div>
+</div>
+<style>
+        .copyright {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #f8f9fa;
+            border-top: 1px solid #e0e0e0;
+        }
+        .copyright span {
+            display: inline-block;
+            margin-left: 50px;
+            color: #333;
+            font-size: 14px;
+        }
+        .copyright strong span {
+            color: #007bff; /* Change this to your preferred color */
+        }
+    </style>
+<div class="copyright">
+        <span>&copy; Copyright <strong><span id="yearSpan"></span> Our Clinic</strong>. All Rights Reserved</span>
+ <div class="d-flex align-items-center">
+            <div id="translation"></div> <!-- Language selection dropdown -->
+        </div>
+        <!-- Include your other scripts and styles -->
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=google_translate"></script>
+<script>
+    function google_translate() {
+        var opt = {
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            pageLanguage: "en",
+        };
+        new google.translate.TranslateElement(opt, "translation");
+    }
+
+    addEventListener("load", function () {
+        if (document.querySelector(".goog-te-menu-frame")) {
+            document.getElementById("translation").addEventListener("click", function () {
+                if (this.id === "translation") scrollableLanguagesList();
+            });
+            addEventListener("resize", function () {
+                if ("none" !== document.querySelector(".goog-te-menu-frame").style.display) scrollableLanguagesList();
+            });
+        }
+    });
+
+    function scrollableLanguagesList() {
+        var iframe = document.querySelector(".goog-te-menu-frame"),
+            doc = iframe.contentWindow.document,
+            div = doc.body.children[0],
+            table = div.children[0],
+            width = div.dataset.width || parseInt(div.style.width),
+            rect,
+            diff;
+
+        if (!div.dataset.width) div.dataset.width = width;
+
+        if (innerWidth < width) {
+            rect = table.getBoundingClientRect();
+            width = rect.right - rect.left;
+            diff = width - innerWidth;
+
+            div.style.width = width - diff - 24 + "px";
+            div.style.padding = "4px 0 1em 4px";
+            div.style.overflowX = "scroll";
+        } else {
+            div.style.width = "auto";
+            div.style.padding = "4px";
+            div.style.overflowX = "visible";
+        }
+
+        rect = div.getBoundingClientRect();
+        iframe.style.width = rect.right - rect.left + "px";
+        iframe.style.height = rect.bottom - rect.top + "px";
+    }
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        translationTooltipsDisable();
+    });
+
+    function translationTooltipsDisable() {
+        _tipon = function () {
+            /*Don't display the tooltip*/
+        };
+        _tipoff = function () {
+            /*Don't hide the tooltip*/
+        };
+    }
+</script>
+
+<style>
+/* General reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Container for the translation widget */
+#translation {
+    margin-bottom: 0px;
+}
+
+/* Styling for the Google Translate widget */
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+
+body {
+    top: 0px !important;
+}
+
+/* Custom styling for the translation button */
+.goog-te-gadget-simple {
+    background-color: #007bff !important; /* Button color */
+    border: 2px solid #0056b3 !important; /* Border color */
+    border-radius: 4px;
+    color: white !important;
+    font-size: 16px !important;
+    padding: 5px 10px !important;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.goog-te-gadget-simple:hover {
+    background-color: #0056b3 !important; /* Hover color */
+    border-color: #003f7f !important; /* Hover border color */
+}
+
+/* Customize the translation select box */
+.goog-te-gadget-simple .goog-te-menu-value {
+    color: white !important;
+}
+
+/* Hide the Google Translate logo */
+.goog-te-gadget img {
+    display: none !important;
+}
+
+/* Style the translation options when the user clicks on the widget */
+.goog-te-menu-frame {
+    width: 20% !important;
+    height: auto !important;
+    max-width: 30px;
+    border: none !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the scrollable language list */
+.goog-te-menu2 {
+    max-height: 10px !important;
+    overflow-y: auto !important;
+    border: none !important;
+    padding: 1px !important;
+}
+
+/* Individual language options */
+.goog-te-menu2-item {
+    padding: 5px 10px !important;
+    cursor: pointer;
+}
+
+.goog-te-menu2-item-selected {
+    background-color: #ddd !important;
+}
+
+/* Responsive iframe styling */
+iframe.goog-te-menu-frame {
+    max-width: 20% !important;
+    height: auto !important;
+}
+</style>
+
+    </div>
+<div class="credits" style="text-align: right; margin-right: 30px;>
+       <span class="badge bg-danger ">Powered By <a href="https://company.kwaga.ltd/"><span class="badge bg-primary">KwagaWebDev</span></a></span>
+    </div>
+<script>
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+        // Calculate the next year
+        const nextYear = currentYear + 1;
+        // Set the text in the span
+        document.getElementById('yearSpan').textContent = `${currentYear}-${nextYear}`;
+    </script>
+   
+<div align="left"class="contact-info">  
+<button type="button" style="margin-left: 10px; class="btn btn-primary">
+ <h5><span class="badge bg-primary">K</span> <span class="badge bg-secondary">W</span><span class="badge bg-danger">D</span><span class="badge bg-success">4.7</span>
+<span class="badge bg-info"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+
+</h5>
+
+</button>
+</div>
+<!-- End Footer -->
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -1724,7 +2237,6 @@ window.onclick = function(event) {
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>
