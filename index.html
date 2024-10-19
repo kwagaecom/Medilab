@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/images/favicon-32x32.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -66,7 +66,7 @@
     <nav id="sidebar" class="sidebar">
       <ul>
         <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-        <li><a class="nav-link scrollto" href="#about">About</a></li>
+        <li><a class="nav-link scrollto" href="#Why">Why</a></li>
         <li><a class="nav-link scrollto" href="#services">Services</a></li>
         <li><a class="nav-link scrollto" href="#departments">Departments</a></li>
         <li><a class="nav-link scrollto" href="#doctors">Doctors</a></li>
@@ -154,16 +154,37 @@ document.addEventListener('DOMContentLoaded', function () {
   const openSidebar = document.querySelector('.open-sidebar');
   const closeSidebar = document.querySelector('.close-sidebar');
   const sidebar = document.querySelector('.sidebar');
+  const navLinks = document.querySelectorAll('.sidebar ul li a'); // All links inside sidebar
 
+  // Open sidebar
   openSidebar.addEventListener('click', function () {
     sidebar.classList.add('show');
   });
 
+  // Close sidebar
   closeSidebar.addEventListener('click', function () {
     sidebar.classList.remove('show');
   });
-});
 
+  // Close sidebar and smooth scroll to section when any link is clicked
+  navLinks.forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      e.preventDefault(); // Prevent default anchor click behavior
+
+      // Close sidebar
+      sidebar.classList.remove('show');
+
+      // Get the target section from the href attribute (e.g., #hero, #about)
+      const targetSection = document.querySelector(this.getAttribute('href'));
+
+      // Smooth scroll to the target section
+      targetSection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    });
+  });
+});
 
 </script>
   <!-- ======= Hero Section ======= -->
@@ -183,7 +204,7 @@ document.addEventListener('DOMContentLoaded', function () {
   <main id="main">
 
     <!-- ======= Why Us Section ======= -->
-    <section id="why-us" class="why-us">
+    <section id="Why" class="why-us">
       <div class="container">
 
         <div class="row">
@@ -338,7 +359,7 @@ document.addEventListener('DOMContentLoaded', function () {
 }
 
 </style>
-<div class="col-md-6">
+<div class="col-md-6" id="services">
     <div id="horizontalCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <!-- Slide 1 -->
@@ -1050,7 +1071,7 @@ document.addEventListener('DOMContentLoaded', function () {
       <div class="container">
 
         <div class="section-title">
-            <h2>Our Services</h2>
+            <h2>Our Departments</h2>
       <p>Welcome to our clinic! We offer a wide range of medical services to cater to your health needs. Explore our specialties below to learn more about what we provide.</p>
         </div>
 
