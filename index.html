@@ -55,6 +55,7 @@
       </div>
     </div>
   </div>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
@@ -83,7 +84,37 @@
 
     </div>
   </header><!-- End Header -->
+<style>
+/* Hide the menu by default in mobile view */
+.navbar ul {
+  display: none;
+}
 
+.navbar.navbar-mobile ul {
+  display: block;
+}
+
+.mobile-nav-toggle {
+  cursor: pointer;
+}
+
+/* Toggle the 'X' icon */
+.bi-x {
+  content: '\f00d'; /* Change icon to 'X' when active */
+}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+  const navbar = document.querySelector('#navbar');
+
+  mobileNavToggle.addEventListener('click', function () {
+    navbar.classList.toggle('navbar-mobile');
+    this.classList.toggle('bi-list');
+    this.classList.toggle('bi-x');
+  });
+});
+</script>
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="line-item">
     <div class="container">
